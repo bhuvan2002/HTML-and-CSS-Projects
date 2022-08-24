@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    overflow: hidden !important;
+}
+
+.container{
+    margin: 0 8%;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.navbar-container .grow-list .list{
+    margin-left: -35%;
+}
+
+
+.navbar-container .grow-list .list .list-item{
+    font-size: 1em;
+    list-style: none;
+    display: inline-block;
+    padding: 10px 10px;
+    font-weight: 400;
+}
+
+.navbar-container .grow-list .list .list-item:first-child{
+    font-weight: 600;
+}
+
+nav div img{
+    width: 100px;
+    padding-top: 5px;
+}
+
+.nav-button {
+    background-color: rgb(89, 85, 179);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.banner-container{
+    display: flex;
+}
+
+.banner-container div img{
+    position: absolute;
+    right: 0;
+    width:600px;
+}
+
+.banner-container div .heading-text{
+    font-size: 65px;
+    line-height: 1.2;
+    color: rgb(60, 47, 96);
+}
+
+.banner-container .description{
+    font-size: 22px;
+    margin-top: -30px;
+    font-weight: 300;
+}
+
+.banner-container div{
+    width: 600px;
+}
+
+span{
+    color: rgb(89, 85, 179);
+}
+
+.btn{
+    padding: 15px 30px;
+}
+
+/* Extra's */
+.list-item:hover{
+    background: linear-gradient(rgb(0,0,0,0.8), rgb(0,0,0,0.5)), url('assets/Header\ Illustration.png');
+    background-size: contain;
+    cursor: pointer;
+    border-radius: 30px;
+    color: #fff;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);   
+}
+
+nav div img:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+    font-size: large;
+    border-radius: 30px;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@media only screen and (min-width: 370px) and (max-width: 480px) {
+    .list{
+        display: none;
+    }    
+
+
+    .banner-container{
+        flex-direction: column;
+        margin-top: 8%;
+    }
+
+    .heading-text{
+        font-size: 40px !important;
+        width: 60%;
+    }
+
+    .description{
+        font-size: 18px !important;
+        width: 60%;
+    }
+
+    div img{
+        width: 70% !important;
+        
+    }
+
+    body{
+        overflow: hidden !important;
+    }
+
+}
